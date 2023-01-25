@@ -13,7 +13,7 @@ import java.util.Scanner;
 3.       Найти минимальное число среди элементов списка - метод getMinimum.
  */
 public class HW_3 {
-    public static LinkedList getIntegerList (int n){
+    public static LinkedList<Integer> getIntegerList (int n){
         Scanner scanner = new Scanner(System.in);
         LinkedList<Integer> linkedList = new LinkedList<>();
         for (int i = 0; i < n; i++) {
@@ -31,8 +31,8 @@ public class HW_3 {
     Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число N");
         int n = scanner.nextInt();
-        System.out.println("минимальное число из введеных :");
-        System.out.println(getMinimum(getIntegerList(n)));
+
+        System.out.println("минимальное число из введеных : "+ getMinimum(getIntegerList(n)));
 
     }//main
 }//class
